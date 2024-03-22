@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-size: cover;
+    background: #cdcdcd;
+    height: 100vh;
+    overflow: hidden;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 29vw;
+    background: white;
+    border-radius: 10px;
+}
+
+.center h1{
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    font-size: 48px;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.center form{
+    padding: 10px 40px;
+    box-sizing: border-box;
+}
+
+form label {
+    position: relative;
+    border-bottom: 2px solid #cdcdcd;
+    margin: 30px 0;
+}
+
+form p {
+    margin: 0px 0px 20px 0px;
+    padding: 0;
+}
+
+form input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-family: monospace;
+    font-size: 16px;
+    background: none;
+    margin: 5px 0px;
+    border: 2px solid #cdcdcd;
+    border-radius: 5px;
+    outline: none;
+}
+
+button[type="Submit"] {
+    width: 100%;
+    height: 50px;
+    background: #F5da22;
+    font-size: 25px;
+    cursor: pointer;
+    font-family: 'Kantumruy Pro', sans-serif;
+    border: none;
+    margin: 15px 0px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+
