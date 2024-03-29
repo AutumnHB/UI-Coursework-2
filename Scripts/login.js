@@ -4,8 +4,7 @@ function validate() {
     var email = document.getElementById("user_email").value; 
     var password = document.getElementById("password").value; 
     if (email == "user@email.com" && password == "secure") {  
-        window.location.href = "mainPage.html"; //why no work?
-        alert("Login successful. Welcome to the site!");
+        window.location.href = "home.html";
         return false;
     } else { 
         attempt--; alert("Incorrect details. You have left " + attempt + " attempts. Please try again."); 

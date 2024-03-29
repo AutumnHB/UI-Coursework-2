@@ -1,0 +1,200 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <title>Main Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../../CSS/mainPages.css">
+        <script type="text/javascript" src="../../Scripts/homeFunctions.js"></script>
+    </head>
+    
+    <body>
+        <!-- Navigation Bar -->
+        <div class="topnav">
+            <!-- Left Side -->
+            <a href="../home.html" class="active">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../map.html">Map</a>
+            <!-- Right Side -->
+            <a href="../account.html" style="float: right;">Account</a>
+            <a href="../calendar.html" style="float: right;">Calendar</a>
+            <a href="../recommendations.html" style="float: right;">Recommendations</a>
+        </div>
+    
+        <!-- Header -->
+        <div class="header">
+            <h1>Restaurants and Cafes</h1>
+        </div>
+    
+        <!-- The Functionality e.g search, filter -->
+        <div class="functions">
+        <!-- Implementing a search bar would require even futher effort. Search bar has already been shown to have functionality -->
+        <input type="text" placeholder="Search... but pls dont">
+            <button onclick="filter()" class="dropbtn">Filter</button>
+                <div id="filter" class="filter-dropdown-content">
+                    <a href="../FilterSimulations/homeFiveStar.html">5★</a>
+                    <a href="../FilterSimulations/homeFourStar.html">4★</a>  
+                    <a href="../FilterSimulations/homeThreeStar.html">3★</a>
+                </div>
+            <button onclick="sort()" class="dropbtn">Sort</button>
+                <div id="sort" class="sort-dropdown-content">
+                    <a href="homeRatingDesc.html">Rating (DESC)</a>
+                    <a href="homeRatingAsc.html">Rating (ASC)</a>
+                </div>
+        </div> 
+        
+        <!-- Main -->
+        <div class="main">
+            <!-- Information about websites. Would be swapped for a loop and database if there was a backend -->
+            <!-- Example restaurant 1 -->
+            <div class="row">
+                <div class="column one">
+                    <a href="../restaurantPage.html"><img src="../../Images/Pho_Interior.jpg" alt="Pho Restaurant"></a>
+                </div>
+                <div class="column two">
+                    <a href="../restaurantPage.html">PHO ➜</a>
+                    <p>CELIAC FRIENDLY</p>
+                    <p>FRESH VIETNAMESE FOOD</p>
+                    <p>CHAIN</p>
+                    <p>PRICE RANGE: £-££</p>
+                    <p>RATINGS: ★★★☆☆</p>
+                    <a href="#" target="_blank">
+                        <button>BOOK NOW</button>
+                    </a> 
+                </div>
+                <div class="column three">
+                    <p>ADDRESS LINE 1</p>
+                    <p>ADDRESS LINE 2</p>
+                    <p>TOWN</p>
+                    <p>BRISTOL</p>
+                    <p>POSTCODE</p>
+                    <!-- Note to self, chance > to image of arrow -->
+                    <a href="https://www.google.com/maps/place/Pho" target="_blank">SEE MAP</a>
+                </div>
+                <div class="column four">
+                    <img src="https://fakeimg.pl/140x140/" alt="Fake Image"></a>
+                </div>
+            </div>
+    
+            <!-- Example Restaurant 4 -->
+            <div class="row">
+                <div class="column one">
+                    <a href="../restaurantPage.html"></a><img src="../../Images/Cote_Interior.jpg" alt="French Restaurant"></a>
+                </div>
+                <div class="column two">
+                    <a href="../restaurantPage.html">COTE BRASSERIE ➜</a>
+                    <p>NOT CELIAC FRIENDLY</p>
+                    <p>TRENDY HIGH-END FRENCH CUISINE</p>
+                    <p>CHAIN</p>
+                    <p>PRICE RANGE: £££-££££</p>
+                    <p>RATINGS: ★★★☆☆</p>
+                    <a href="#" target="_blank">
+                        <button>BOOK NOW</button>
+                    </a> 
+                </div>
+                <div class="column three">
+                    <p>ADDRESS LINE 1</p>
+                    <p>ADDRESS LINE 2</p>
+                    <p>TOWN</p>
+                    <p>BRISTOL</p>
+                    <p>POSTCODE</p>
+                    <a href="https://www.google.com/maps/place/Cote+Brasserie" target="_blank">SEE MAP</a>
+                </div>
+                <div class="column four">
+                    <img src="https://fakeimg.pl/140x140/" alt="Fake Image"></a>
+                </div>
+            </div>
+
+            <!-- Example Restaurant 2 -->
+            <div class="row">
+                <div class="column one">
+                    <a href="../restaurantPage.html"><img src="../../Images/Mexican_Interior.jpg" alt="Mexican Restaurant"></a>
+                </div>
+                <div class="column two">
+                    <a href="../restaurantPage.html">THE CANTINA ➜</a>
+                    <p>NOT CELIAC FRIENDLY</p>
+                    <p>HANDMADE MEXICAN STREET FOOD</p>
+                    <p>INDEPENDANT</p>
+                    <p>PRICE RANGE: £-££</p>
+                    <p>RATINGS: ★★★★☆</p>
+                    <a href="#" target="_blank">
+                        <button>BOOK NOW</button>
+                    </a> 
+                </div>
+                <div class="column three">
+                    <p>ADDRESS LINE 1</p>
+                    <p>ADDRESS LINE 2</p>
+                    <p>TOWN</p>
+                    <p>BRISTOL</p>
+                    <p>POSTCODE</p>
+                    <a href="https://www.google.com/maps/place/The+Cantina" target="_blank">SEE MAP</a>
+                </div>
+                <div class="column four">
+                    <img src="https://fakeimg.pl/140x140/" alt="Fake Image"></a>
+                </div>
+            </div>
+    
+            <!-- Example Restaurant 5 -->
+            <div class="row">
+                <div class="column one">
+                    <a href="../restaurantPage.html"><img src="../../Images/Vegan_Interior.jpg" alt="Vegan Cafe"></a>
+                </div>
+                <div class="column two">
+                    <a href="../restaurantPage.html">SUNNY'S CAFE ➜</a>
+                    <p>NOT CELIAC FRIENDLY</p>
+                    <p>HOMEMADE BRITISH VEGAN</p>
+                    <p>INDEPENDANT</p>
+                    <p>PRICE RANGE: ££-£££</p>
+                    <p>RATINGS: ★★★★☆</p>
+                    <a href="#" target="_blank">
+                        <button>BOOK NOW</button>
+                    </a> 
+                </div>
+                <div class="column three">
+                    <p>ADDRESS LINE 1</p>
+                    <p>ADDRESS LINE 2</p>
+                    <p>TOWN</p>
+                    <p>BRISTOL</p>
+                    <p>POSTCODE</p>
+                    <a href="https://www.google.com/maps/place/Sunny's+Vegan+Cafe" target="_blank">SEE MAP</a>
+                </div>
+                <div class="column four">
+                    <img src="https://fakeimg.pl/140x140/" alt="Fake Image"></a>
+                </div>
+            </div>
+
+            <!-- Example Restaurant 3 -->
+            <div class="row">
+                <div class="column one">
+                    <a href="../restaurantPage.html"><img src="../../Images/Nature_Interior.jpg" alt="Nature Cafe"></a>
+                </div>
+                <div class="column two">
+                    <a href="../restaurantPage.html">20 FLOWERS TEA ➜</a>
+                    <p>CELIAC FRIENDLY</p>
+                    <p>LOCAL TEA AND DESSERT SHOP</p>
+                    <p>INDEPENDANT</p>
+                    <p>PRICE RANGE: ££-£££</p>
+                    <p>RATINGS: ★★★★★</p>
+                    <a href="#" target="_blank">
+                        <button>BOOK NOW</button>
+                    </a> 
+                </div>
+                <div class="column three">
+                    <p>ADDRESS LINE 1</p>
+                    <p>ADDRESS LINE 2</p>
+                    <p>TOWN</p>
+                    <p>BRISTOL</p>
+                    <p>POSTCODE</p>
+                    <a href="https://www.google.com/maps/place/20+Flowers+Tea" target="_blank">SEE MAP</a>
+                </div>
+                <div class="column four">
+                    <img src="https://fakeimg.pl/140x140/" alt="Fake Image"></a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer -->
+        <div class="footer">
+            <h2>Created by Autumn Bamford - AB1191</h2>
+        </div>
+    </body>
+    </html>
