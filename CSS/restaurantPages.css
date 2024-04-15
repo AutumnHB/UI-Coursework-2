@@ -1,0 +1,125 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+iframe, img {
+  width: 350px;
+  height: 350px;
+  border: 0;
+  
+}
+
+/* Navbar */
+.topnav {
+  width: 100%;
+  overflow: hidden;
+  background-color: #cdcdcd;
+  position: fixed;
+  z-index: 1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  font-family: "Fredoka", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #adadad;
+}
+
+.topnav a.active {
+	background-color: #F5da22;
+	color: black;
+    margin: 0px;
+}
+
+/* Header */
+.header {
+  padding-top: 50px;
+  margin-bottom: -30px;
+  text-align: center; 
+  color: black;
+  font-size: 38px;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 700;
+}
+
+/* Main */
+.main {
+    width: 65%;
+    max-width: 100%;
+    margin: auto;
+    padding-left: 5%;
+  }
+  
+  .main p {
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: black;
+    line-height: 7px;
+  }
+  
+  /* Column layout*/
+  .column {
+    float: left;
+    width: 50%;
+  }
+
+  /* Row Layout */
+.row {
+    margin-bottom: 50px;
+  }
+  
+  .row button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 11px 40px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .row button:hover {
+    background-color: rgb(75, 75, 75);
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - stacks if screen gets smaller */
+  @media screen and (max-width: 800px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
+  /* Footer */
+  .footer {
+    font-family: "Fredoka", sans-serif;
+    font-size: 18px;
+    width: 100%;
+    background-color: #cdcdcd;
+    padding: 5px;
+    margin-top: 30px;
+    text-align: center;
+    color: black;
+  }

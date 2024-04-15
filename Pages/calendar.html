@@ -1,0 +1,79 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>Calendar</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" type="text/css" href="../CSS/mainPages.css">
+            <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.css' rel='stylesheet'/>
+            <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.js'></script>
+            <script>document.addEventListener('DOMContentLoaded', function() {
+                var calendarEl = document.getElementById('calendar');
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    initialDate: '2024-03-01',editable: true,
+                    selectable: true,businessHours: true,
+                    dayMaxEvents: true,
+                    events: [{
+                        title: 'Sunny\'s Cafe',
+                        start: '2024-03-03T08:00:00',
+                        end: '2024-03-03T10:00:00'
+                    },
+                    {
+                        title: 'Pho',
+                        start: '2024-04-07T20:00:00',
+                        end: '2024-04-07T21:00:00'
+                    },
+                    {
+                        title: 'The Cantina',
+                        start: '2024-03-12T12:30:00',
+                        end: '2024-03-12T13:30:00'
+                    },
+                    {
+                        title: 'Cote Brasserie',
+                        start: '2024-04-19T12:00:00',
+                        end: '2024-04-19T13:30:00'
+                    }],
+                     eventClick: function(info) {
+                        info.jsEvent.preventDefault();
+                        if (info.event.url) {
+                            alert(info.event.url);
+                            //window.open(info.event.url);
+                        }
+                    }
+                }
+            );
+            calendar.render();
+        });
+        </script>
+            
+        </head>
+        <body>
+            <!-- Navigation Bar -->
+            <div class="topnav" style="z-index: 100;">
+                <!-- Left Side -->
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="map.html">Map</a>
+                <!-- Right Side -->
+                <a href="account.html" style="float: right;">Account</a>
+                <a href="calendar.html" style="float: right;" class="active">Calendar</a>
+                <a href="recommendations.html" style="float: right;">Recommendations</a>
+            </div>
+        
+            <!-- Header -->
+            <div class="header">
+                <h1>Calendar</h1>
+            </div>
+    
+            <!-- Main -->
+            <div class="calendarMain">
+                <div id='calendar'></div>
+                <h3>The calendar automatically updates when you create a new booking. Visit the website pages to create one!</h3>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <h2>Created by Autumn Bamford - AB1191</h2>
+            </div>
+        </body>
+    </html>
+</DOCTYPE>

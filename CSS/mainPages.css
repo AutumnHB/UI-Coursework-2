@@ -129,7 +129,24 @@ img {
   font-size: 20px;
 }
 
+.aboutMain button {
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .mapMain {
+  width: 65%;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.calendarMain {
   width: 65%;
   max-width: 100%;
   margin: auto;
@@ -171,7 +188,7 @@ img {
   width: 32%;
   text-align: left;
   padding-left: 12px;
-}
+} 
 
 .three{
   padding-top: 38px; /* To align with the column two */
@@ -180,12 +197,16 @@ img {
   padding-right: 12px;
 }
 
+.column a:hover {
+  color: rgb(75, 75, 75);
+}
+
 /* Row Layout */
 .row {
   margin-bottom: 50px;
 }
 
-.row button, .aboutMain button{
+.row button{
   background-color: black;
   color: white;
   border: none;
@@ -193,6 +214,11 @@ img {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+}
+
+.row button:hover {
+  background-color: rgb(75, 75, 75);
+  color: white;
 }
 
 .row:after {
