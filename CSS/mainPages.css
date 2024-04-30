@@ -10,9 +10,10 @@ body{
   box-sizing: border-box;
 }
 
-img {
+img, iframe {
   width: 200px;
   height: 200px;
+  border: 0px;
 }
 
 /* Navbar */
@@ -198,7 +199,7 @@ img {
 }
 
 .column a:hover {
-  color: rgb(75, 75, 75);
+  filter: opacity(75%);
 }
 
 /* Row Layout */
@@ -217,7 +218,7 @@ img {
 }
 
 .row button:hover {
-  background-color: rgb(75, 75, 75);
+  filter: opacity(75%);
   color: white;
 }
 
@@ -234,14 +235,3 @@ img {
   }
 }
 
-/* Footer */
-.footer {
-  font-family: "Fredoka", sans-serif;
-  font-size: 18px;
-  width: 100%;
-  background-color: #cdcdcd;
-  padding: 5px;
-  margin-top: 30px;
-  text-align: center;
-  color: black;
-}

@@ -10,7 +10,7 @@ body{
   box-sizing: border-box;
 }
 
-iframe, img {
+img {
   width: 350px;
   height: 350px;
   border: 0;
@@ -44,7 +44,7 @@ iframe, img {
 .topnav a.active {
 	background-color: #F5da22;
 	color: black;
-    margin: 0px;
+  margin: 0px;
 }
 
 /* Header */
@@ -63,33 +63,45 @@ iframe, img {
     width: 65%;
     max-width: 100%;
     margin: auto;
-    padding-left: 5%;
   }
   
   .main p {
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 21px;
     color: black;
     line-height: 15px;
   }
 
-  .reviewContent {
-    word-wrap:break-word;
-    letter-spacing: 1px;
-    font-size: 16px;
-    color: rgb(26, 26, 26);
-    line-height: 20px;
+/* Center */
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  
+  /* Column layout*/
+.column {
+    float: left;
   }
   
-  .userTag {
-    font-size: 12px;
-    color: grey;
-  }
-  /* Column layout*/
-  .column {
-    float: left;
+  .left{
     width: 50%;
   }
+
+  .left img{
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-right: 50px;
+  }
+  
+  .right {
+    width: 50%;
+    text-align: left;
+    
+  } 
 
   /* Row Layout */
 .row {
@@ -109,7 +121,7 @@ iframe, img {
   }
   
   .row button:hover {
-    background-color: rgb(75, 75, 75);
+    filter: opacity(75%);
     color: white;
   }
   
